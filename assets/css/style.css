@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e4e5e3;
+    background-color: #5c87a4;
 }
 
 header {
@@ -16,6 +16,7 @@ header {
     color: #ffffff; 
     
 } 
+
 
 
 header h1 {
@@ -51,24 +52,70 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 sidebar {
-    flex: 1;
-    background-color: #cff8b0;
-    margin: 20px;
-    text-align:center;
+    height: 100%;
+    width: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 20px;
     float: left;
+    justify-content: right; 
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
   } 
+
+.vl1 {
+    border-right: 4px solid #333333;;
+    padding-right: 4px;
+    height: 300px;
+    text-align:right;
+    text-indent: 62px;
+    font-size: 20px;
+    position: absolute;
+    flex: 1;
+}  
+
+.vl2 {
+    margin-top: 320px;
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 4px;
+    border-right: 4px solid #333333;;
+    height: 600px;
+    text-align: right;
+    text-indent: 62px;
+    font-size: 20px;
+    position: absolute;
+    flex: 1;
+}  
+
+
+.vl3 {
+    margin-top: 940px;
+    padding-top: 20px;
+    padding-right: 4px;
+    border-right: 4px solid #333333;;
+    height: 200px;
+    text-align: right;
+    text-indent: 38px;
+    font-size: 20px;
+    position: absolute;
+    flex: 1;
+}  
+
 
 main {
     width: 80%;
-    display:inline;
+    display: inline;
+    flex-wrap: wrap;
     margin-right: 20px;
     margin-top: 50px;
-    float:right; 
-    
+    float:right;   
 }
 
 footer {
@@ -89,113 +136,76 @@ footer h2 {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
     color: #ffffff;
+    flex: 4;
     
 }
 
 .my-work-section {
+    flex: 8;
     margin-bottom: 20px;
     margin-left:  20px;
     padding: 50px;
     height: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
     color: #ffffff;
 }
-/*
-.projects {
-    flex: 4;
-    padding: 20px;
-    margin: 10px;
-    display: grid;
-    grid-template-columns: auto auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-} */
+
 
 .projects {
-    height: 450px;
-    padding-top: 10px;
+    padding: 10px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 500px 400px;
     grid: 100px;
     gap: 10px;
-    padding: 10px;
+    justify-content: center;
   }
 
 
 .projects div {
-    border-style: dashed;
-    border-width: 1px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #333333;
     text-align: center;
     padding: 20px 0px;
     font-size: 20px;
-    
-  }
+  } 
+
 .card1 {
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
+    height: 500px;
 }
 
-/*
-.card {
-    height: 300px;
-    border-style: dashed;
-    border-width: 1px;
-    border-radius: 0px;
-    padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(0deg);
-    box-shadow: 8px 8px 4px #aaaaaa;
-    margin: 20px;
-    
-} */
-/*
-.card1 {
-    border-style: dashed;
-    border-width: 1px;
-    border-radius: 0px;
-    padding: 10px;
-    flex: 0 0 300px;
-    transform: rotate(0deg);
-    box-shadow: 8px 8px 4px #aaaaaa;
-    margin: 20px;
-    
-} */
+.card2 {
+    height: 245px;
+}
+
+.card3 {
+    height: 245px;
+}
 
 .projects div img {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     padding: 20px
 }
 
-.projects div name {
-    text-align: center;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #333333;
-    color: #ffffff; 
-    
-}
 
 
 .contact-me-section {
-    margin-top: 30px;
+    flex: 2;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-left:  20px;
     padding: 50px;
     height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
     color: #ffffff;
 }
 
 .contact-me-section ul {
     list-style-type: none;
-    text-align: top;
+    text-align: left;
 }
 
 .contact-me-section ul li {
@@ -203,6 +213,7 @@ footer h2 {
     margin-top: 10px;
     margin-left: 25px;
     text-decoration: underline;
+    font-size: 20px;
     
 }
 
